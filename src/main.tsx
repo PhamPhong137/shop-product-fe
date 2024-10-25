@@ -7,6 +7,7 @@ import { Toaster } from "./components/ui/toaster";
 import HomePage from "./pages/homepage";
 import { NotFoundPage } from "./pages/404";
 import ChatBot from "./pages/chatbot-interface";
+import FormComponent from "./pages/form-data";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,10 @@ const routers = createBrowserRouter([
         path: "/chatbot",
         element: <ChatBot />,
       },
+      {
+        path:"/form",
+        element: <FormComponent />
+      }
     ],
   },
 ]);
